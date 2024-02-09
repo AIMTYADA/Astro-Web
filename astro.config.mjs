@@ -12,12 +12,14 @@ import config from "./src/config/config.json";
 export default defineConfig({
   // site: config.site.base_url ? config.site.base_url : "http://127.0.0.1/",
   // base: config.site.base_path ? config.site.base_path : "/update",
+  site: 'http://127.0.0.1/',
+  base: '/',
   build: {
     assets: 'my-assets/',
-    assetsPrefix: 'http://127.0.0.1/update/'
+    assetsPrefix: 'http://127.0.0.1/static/'
   },
   site: "http://127.0.0.1/",
-  base: "/update",
+  base: "/static",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: {
     service: squooshImageService(),
